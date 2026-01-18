@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسواق السفير | تسوق بذكاء</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --main-green: #27ae60;
+            --light-green: #2ecc71;
+            --accent-orange: #f39c12;
+            --bg-white: #ffffff;
+            --text-dark: #1e272e;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: var(--text-dark);
+        }
+
+        /* الهيدر الاحترافي */
+        header {
+            background: linear-gradient(135deg, var(--main-green), #10ac84);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo-box i {
+            font-size: 50px;
+            margin-bottom: 10px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .contact-top {
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* بار التوصيل السريع */
+        .delivery-bar {
+            background: var(--accent-orange);
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-weight: 900;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* شبكة الأقسام الملونة */
+        .categories-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+            padding: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(39, 174, 96, 0.2);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .category-card h4 {
+            margin: 10px 0;
+            color: var(--main-green);
+            font-weight: 700;
+        }
+
+        /* صندوق الطلب المبسط */
+        .order-wrapper {
+            max-width: 600px;
+            margin: 20px auto 50px;
+            padding: 0 20px;
+        }
+
+        .order-card {
+            background: white;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border: 2px solid var(--main-green);
+        }
+
+        .order-card h2 {
+            text-align: center;
+            color: var(--main-green);
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .input-group textarea, .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #f0f0f0;
+            border-radius: 15px;
+            font-family: 'Cairo';
+            font-size: 16px;
+            background: #fafafa;
+            transition: 0.3s;
+        }
+
+        .input-group textarea:focus {
+            border-color: var(--main-green);
+            background: #fff;
+            outline: none;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 18px;
+            width: 100%;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: scale(1.02);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-box">
+        <i class="fas fa-leaf"></i>
+        <h1 style="margin:0;">أسواق السفير</h1>
+        <div class="contact-top">📱 للإستفسار: 0115520836</div>
+    </div>
+</header>
+
+<div class="delivery-bar">
+    <i class="fas fa-bolt"></i> نصل إليك في أقل من 15 دقيقة! <i class="fas fa-shipping-fast"></i>
+</div>
+
+<div class="categories-container">
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=300&q=80" alt="خضار">
+        <h4>الخضار</h4>
+    </div>
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=300&q=80" alt="فواكه">
+        <h4>الفواكه</h4>
+    </div>
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1486297678162-ad2a19b058f1?auto=format&fit=crop&w=300&q=80" alt="أجبان">
+        <h4>الأجبان</h4>
+    </div>
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1550583724-1255818c0533?auto=format&fit=crop&w=300&q=80" alt="ألبان">
+        <h4>الألبان</h4>
+    </div>
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80" alt="مخبوزات">
+        <h4>المخبوزات</h4>
+    </div>
+    <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1540340061722-9293d5163008?auto=format&fit=crop&w=300&q=80" alt="شوكلاتة">
+        <h4>التسالي</h4>
+    </div>
+</div>
+
+<div class="order-wrapper">
+    <div class="order-card">
+        <h2>🛍️ طلب سريع</h2>
+        
+        <div class="input-group">
+            <label>اكتب طلباتك هنا:</label>
+            <textarea id="orderItems" rows="5" placeholder="مثال: كيلو موز، خبز، بطاطس ليز.."></textarea>
+        </div>
+
+        <div class="input-group">
+            <label>العنوان:</label>
+            <input type="text" id="address" placeholder="الحي - اسم الشارع - رقم المنزل">
+        </div>
+
+        <button class="whatsapp-btn" onclick="sendOrder()">
+            <i class="fab fa-whatsapp"></i> إرسال للواتساب
+        </button>
+    </div>
+</div>
+
+<footer>
+    أسواق السفير للمواد الغذائية &copy; 2026<br>
+    جميع الحقوق محفوظة
+</footer>
+
+<script>
+    function sendOrder() {
+        const items = document.getElementById('orderItems').value;
+        const address = document.getElementById('address').value;
+        const whatsappNumber = "966550358482";
+
+        if (!items || !address) {
+            alert("يرجى كتابة الطلبات والعنوان أولاً");
+            return;
+        }
+
+        const message = encodeURIComponent(
+            `*طلب جديد من أسواق السفير*\n\n` +
+            `*الطلبات:*\n${items}\n\n` +
+            `*العنوان:*\n${address}\n\n` +
+            `⚡ _يرجى التوصيل خلال 15 دقيقة_`
+        );
+
+        const url = `https://wa.me/${whatsappNumber}?text=${message}`;
+        
+        // فتح الواتساب
+        window.open(url, '_blank');
+
+        // تفريغ الخانات فوراً بعد الإرسال
+        setTimeout(() => {
+            document.getElementById('orderItems').value = "";
+            document.getElementById('address').value = "";
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>
